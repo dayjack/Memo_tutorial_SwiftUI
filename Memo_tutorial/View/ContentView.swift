@@ -10,41 +10,42 @@ import SwiftUI
 struct ContentView: View {
     
     @State var searchText: String = ""
+    @State var memoCount: Int = 0
     
     var body: some View {
-        
         
         NavigationStack {
             
             ZStack {
                 VStack(alignment: .leading) {
                     
-//                    TextField("🔍검색", text: $searchText)
-//                        .textFieldStyle(.roundedBorder)
-//                        .padding(.horizontal, 20)
-//                        .background(Color("MemoBackgroundColor"))
-                    
                     HStack {
                         Image(systemName: "magnifyingglass")
+                            .foregroundColor(.gray)
                         TextField("검색", text: $searchText)
                     }
                     .padding(.leading , 10)
                     .padding(.vertical, 5)
-                    .background(.gray)
+                    .background(Color("SearchBarColor"))
                     .cornerRadius(10)
                     .padding(.horizontal,20)
-                    .foregroundColor(Color("MemoBackgroundColor"))
+                    .foregroundColor(.gray)
                     
                     List {
-                        
                         Section {
                             NavigationLink {
                                 Text("이동할 화면")
                             } label: {
                                 HStack {
                                     Image(systemName: "folder")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                        .aspectRatio(contentMode: .fit)
                                         .foregroundColor(.yellow)
                                     Text("모든 iCloud")
+                                    Spacer()
+                                    Text("\(memoCount)")
+                                        .foregroundColor(.gray)
                                 }
                             }
                         } header: {
@@ -63,14 +64,22 @@ struct ContentView: View {
                             //
                         } label: {
                             Image(systemName: "folder.badge.plus")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .aspectRatio(contentMode: .fit)
                                 .foregroundColor(.yellow)
                         }
                         .padding(20)
                         Spacer()
-                        Button {
-                            //
+                        
+                        
+                        NavigationLink {
+                            MemoWriteView()
                         } label: {
                             Image(systemName: "square.and.pencil")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .aspectRatio(contentMode: .fit)
                                 .foregroundColor(.yellow)
                         }
                         .padding(20)
@@ -90,6 +99,7 @@ struct ContentView: View {
             }
             .background(Color("MemoBackgroundColor"))
         }
+        .accentColor(.yellow)
     }
 }
 
