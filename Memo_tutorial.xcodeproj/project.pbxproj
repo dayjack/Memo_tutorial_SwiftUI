@@ -51,8 +51,8 @@
 		787D71AE29C300D20076692B /* Memo_tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				787D71BD29C300DF0076692B /* View */,
 				787D71AF29C300D20076692B /* Memo_tutorialApp.swift */,
-				787D71B129C300D20076692B /* ContentView.swift */,
 				787D71B329C300D30076692B /* Assets.xcassets */,
 				787D71B529C300D30076692B /* Preview Content */,
 			);
@@ -65,6 +65,14 @@
 				787D71B629C300D30076692B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		787D71BD29C300DF0076692B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				787D71B129C300D20076692B /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
