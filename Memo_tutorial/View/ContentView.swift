@@ -3,7 +3,7 @@
 //  Memo_tutorial
 //
 //  Created by ChoiYujin on 2023/03/16.
-//
+// git 충돌
 
 import SwiftUI
 
