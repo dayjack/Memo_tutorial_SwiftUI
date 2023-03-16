@@ -11,10 +11,6 @@ struct ContentView: View {
     
     @State var searchText: String = ""
 
-    
-    var body: some View {
-        
-
     @State var memoCount: Int = 0
     @State var isMakeNewFolder: Bool = false
     

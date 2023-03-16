@@ -57,10 +57,9 @@
 		787D71AE29C300D20076692B /* Memo_tutorial */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-=======
+
 				789BD2C029C31DD800F54856 /* Model */,
->>>>>>> dev
+
 				787D71BD29C300DF0076692B /* View */,
 				787D71AF29C300D20076692B /* Memo_tutorialApp.swift */,
 				787D71B329C300D30076692B /* Assets.xcassets */,
@@ -81,17 +80,15 @@
 			isa = PBXGroup;
 			children = (
 				787D71B129C300D20076692B /* ContentView.swift */,
-<<<<<<< HEAD
-=======
+
 				7849C1C129C31EC200BAB84D /* MemoWriteView.swift */,
 				78122D5629C32F9300C10E42 /* MakeFolderView.swift */,
->>>>>>> dev
+
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
+
 		789BD2C029C31DD800F54856 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +97,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
->>>>>>> dev
+
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
