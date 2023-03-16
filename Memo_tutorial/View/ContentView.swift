@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @State var searchText: String = ""
     @State var memoCount: Int = 0
+    @State var isMakeNewFolder: Bool = false
     
     var body: some View {
         
@@ -61,7 +62,7 @@ struct ContentView: View {
                     Spacer()
                     HStack {
                         Button {
-                            //
+                            isMakeNewFolder.toggle()
                         } label: {
                             Image(systemName: "folder.badge.plus")
                                 .resizable()
@@ -70,6 +71,9 @@ struct ContentView: View {
                                 .foregroundColor(.yellow)
                         }
                         .padding(20)
+                        .sheet(isPresented: $isMakeNewFolder) {
+                            MakeFolderView(isMakeNewFolder: $isMakeNewFolder)
+                        }
                         Spacer()
                         
                         

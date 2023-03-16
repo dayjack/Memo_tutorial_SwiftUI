@@ -55,9 +55,9 @@ struct MemoWriteView: View {
                             .frame(width: 24, height: 24)
                             .aspectRatio(contentMode: .fit)
                     }.padding(.horizontal, 20)
-
-                }.foregroundColor(.yellow)
                     
+                }.foregroundColor(.yellow)
+                
             }.toolbar {
                 HStack {
                     Button {
@@ -80,7 +80,6 @@ struct MemoWriteView: View {
                 }
                 .foregroundColor(.yellow)
             }
-         
             
         }
     }
