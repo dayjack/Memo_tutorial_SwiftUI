@@ -14,5 +14,6 @@ struct MemoVO {
     var date: Date {
         return Date.now
     }
+    var folder: String = ""
     
 }
