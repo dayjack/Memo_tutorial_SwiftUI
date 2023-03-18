@@ -10,7 +10,7 @@ import Foundation
 struct MemoVO {
     
     var title: String = ""
-    var context: String = ""
+    var content: String = ""
     var date: Date {
         return Date.now
     }

@@ -38,6 +38,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		782374A029C4820300BC3F9C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		787D71A329C300D10076692B = {
 			isa = PBXGroup;
 			children = (
@@ -57,9 +64,8 @@
 		787D71AE29C300D20076692B /* Memo_tutorial */ = {
 			isa = PBXGroup;
 			children = (
-
+				782374A029C4820300BC3F9C /* Data */,
 				789BD2C029C31DD800F54856 /* Model */,
-
 				787D71BD29C300DF0076692B /* View */,
 				787D71AF29C300D20076692B /* Memo_tutorialApp.swift */,
 				787D71B329C300D30076692B /* Assets.xcassets */,
@@ -80,15 +86,12 @@
 			isa = PBXGroup;
 			children = (
 				787D71B129C300D20076692B /* ContentView.swift */,
-
 				7849C1C129C31EC200BAB84D /* MemoWriteView.swift */,
 				78122D5629C32F9300C10E42 /* MakeFolderView.swift */,
-
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-
 		789BD2C029C31DD800F54856 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +100,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +234,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -286,6 +289,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

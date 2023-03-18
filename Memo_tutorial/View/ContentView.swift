@@ -10,8 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     @State var searchText: String = ""
-    @State var memoCount: Int = 0
+    @State var memoCount: Int  = 0
     @State var isMakeNewFolder: Bool = false
+    @State var memoList: [MemoVO] = [MemoVO()]
     
     var body: some View {
         
@@ -47,6 +48,9 @@ struct ContentView: View {
                                     Spacer()
                                     Text("\(memoCount)")
                                         .foregroundColor(.gray)
+                                        .onAppear {
+                                            memoCount = memoList.count
+                                        }
                                 }
                             }
                         } header: {
@@ -97,8 +101,6 @@ struct ContentView: View {
                         Text("편집")
                             .foregroundColor(.yellow)
                     }
-
-
                 }
             }
             .background(Color("MemoBackgroundColor"))

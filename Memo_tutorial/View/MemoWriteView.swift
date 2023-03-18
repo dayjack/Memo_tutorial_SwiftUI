@@ -11,6 +11,8 @@ struct MemoWriteView: View {
     
     @State var memoString: String = "메모 여기에"
     @State var isEdited: Bool = false
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
         NavigationStack {
@@ -24,61 +26,58 @@ struct MemoWriteView: View {
                         .padding(20)
                     Spacer()
                     
-                    
-                    
-                    
-                    
-                }.toolbar {
-                    if isEdited {
-                        HStack {
-                            Button {
-                                //
-                            } label: {
-                                Image(systemName: "square.and.arrow.up")
-                                    .resizable()
-                                    .frame(width: 24, height: 24)
-                                    .aspectRatio(contentMode: .fit)
+                        }.toolbar {
+                            if isEdited {
+                                HStack {
+                                    Button {
+                                        //
+                                    } label: {
+                                        Image(systemName: "square.and.arrow.up")
+                                            .resizable()
+                                            .frame(width: 24, height: 24)
+                                            .aspectRatio(contentMode: .fit)
+                                    }
+                                    .padding(.horizontal, 20)
+                                    Button {
+                                        //
+                                    } label: {
+                                        Image(systemName: "ellipsis.circle")
+                                            .resizable()
+                                            .frame(width: 24, height: 24)
+                                            .aspectRatio(contentMode: .fit)
+                                    }
+                                    Button {
+                                    
+                                        self.presentationMode.wrappedValue.dismiss()
+                                    } label: {
+                                        Text("완료")
+                                    }
+                                }.foregroundColor(.yellow)
+                                
+                            } else {
+                                HStack {
+                                    Button {
+                                        //
+                                    } label: {
+                                        Image(systemName: "square.and.arrow.up")
+                                            .resizable()
+                                            .frame(width: 24, height: 24)
+                                            .aspectRatio(contentMode: .fit)
+                                    }
+                                    .padding(.horizontal, 20)
+                                    Button {
+                                        //
+                                    } label: {
+                                        Image(systemName: "ellipsis.circle")
+                                            .resizable()
+                                            .frame(width: 24, height: 24)
+                                            .aspectRatio(contentMode: .fit)
+                                    }
+                                }
+                                .foregroundColor(.yellow)
                             }
-                            .padding(.horizontal, 20)
-                            Button {
-                                //
-                            } label: {
-                                Image(systemName: "ellipsis.circle")
-                                    .resizable()
-                                    .frame(width: 24, height: 24)
-                                    .aspectRatio(contentMode: .fit)
-                            }
-                            Button {
-                                //
-                            } label: {
-                                Text("완료")
-                            }
-                        }.foregroundColor(.yellow)
-                        
-                    } else {
-                        HStack {
-                            Button {
-                                //
-                            } label: {
-                                Image(systemName: "square.and.arrow.up")
-                                    .resizable()
-                                    .frame(width: 24, height: 24)
-                                    .aspectRatio(contentMode: .fit)
-                            }
-                            .padding(.horizontal, 20)
-                            Button {
-                                //
-                            } label: {
-                                Image(systemName: "ellipsis.circle")
-                                    .resizable()
-                                    .frame(width: 24, height: 24)
-                                    .aspectRatio(contentMode: .fit)
-                            }
+                            
                         }
-                        .foregroundColor(.yellow)
-                    }
-                    
-                }
                 Spacer()
                 
                 if isEdited {
@@ -139,7 +138,7 @@ struct MemoWriteView: View {
                             }.padding(.horizontal, 20)
                             Spacer()
                             Button {
-                                //
+                                
                             } label: {
                                 Image(systemName: "square.and.pencil")
                                     .resizable()
