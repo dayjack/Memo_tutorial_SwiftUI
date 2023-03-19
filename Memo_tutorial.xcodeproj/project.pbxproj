@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		78122D5729C32F9300C10E42 /* MakeFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78122D5629C32F9300C10E42 /* MakeFolderView.swift */; };
+		781E13EC29C6C43B00A48528 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E13EB29C6C43B00A48528 /* MemoListView.swift */; };
 		7849C1C029C31E3F00BAB84D /* MemoVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7849C1BF29C31E3F00BAB84D /* MemoVO.swift */; };
 		7849C1C229C31EC200BAB84D /* MemoWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7849C1C129C31EC200BAB84D /* MemoWriteView.swift */; };
 		787D71B029C300D20076692B /* Memo_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787D71AF29C300D20076692B /* Memo_tutorialApp.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		78122D5629C32F9300C10E42 /* MakeFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeFolderView.swift; sourceTree = "<group>"; };
+		781E13EB29C6C43B00A48528 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
 		7849C1BF29C31E3F00BAB84D /* MemoVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoVO.swift; sourceTree = "<group>"; };
 		7849C1C129C31EC200BAB84D /* MemoWriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoWriteView.swift; sourceTree = "<group>"; };
 		787D71AC29C300D20076692B /* Memo_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memo_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 				787D71B129C300D20076692B /* ContentView.swift */,
 				7849C1C129C31EC200BAB84D /* MemoWriteView.swift */,
 				78122D5629C32F9300C10E42 /* MakeFolderView.swift */,
+				781E13EB29C6C43B00A48528 /* MemoListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 			files = (
 				787D71B229C300D20076692B /* ContentView.swift in Sources */,
 				7849C1C029C31E3F00BAB84D /* MemoVO.swift in Sources */,
+				781E13EC29C6C43B00A48528 /* MemoListView.swift in Sources */,
 				78122D5729C32F9300C10E42 /* MakeFolderView.swift in Sources */,
 				7849C1C229C31EC200BAB84D /* MemoWriteView.swift in Sources */,
 				787D71B029C300D20076692B /* Memo_tutorialApp.swift in Sources */,

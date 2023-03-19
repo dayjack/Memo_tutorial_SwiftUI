@@ -36,7 +36,7 @@ struct ContentView: View {
                     List {
                         Section {
                             NavigationLink {
-                                Text("이동할 화면")
+                                MemoListView()
                             } label: {
                                 HStack {
                                     Image(systemName: "folder")
